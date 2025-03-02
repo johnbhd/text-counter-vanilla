@@ -1,17 +1,17 @@
 export const TextArea = () => {
-    const title = document.createElement('h2');
-    const textInput = document.createElement('textarea');
-    const Rtitle = document.createElement('h2');
-
-    const paraCount = document.createElement('P');
-    const sentCount = document.createElement('P');
-    const wordCount = document.createElement('P');
-    const charCount = document.createElement('P');
-    const numCount = document.createElement('P');
-    const speCount = document.createElement('P');
-
-    const button = document.createElement('button');
-    const resetbut = document.createElement('button');
+    const title = document.getElementById('title');
+    const textInput = document.getElementById('textInput');
+    const Rtitle = document.getElementById('Rtitle');
+    
+    const paraCount = document.getElementById('paraCount');
+    const sentCount = document.getElementById('sentCount');
+    const wordCount = document.getElementById('wordCount');
+    const charCount = document.getElementById('charCount');
+    const numCount = document.getElementById('numCount');
+    const speCount = document.getElementById('speCount');
+    
+    const button = document.getElementById('countButton');
+    const resetbut = document.getElementById('resetButton');
 
     // Using an object 
     const resultNames = {
@@ -33,10 +33,8 @@ export const TextArea = () => {
         spe: 0
     };
 
-    title.innerHTML = 'Text Analyzer';
     button.innerHTML = 'Count';
     resetbut.innerHTML = 'Reset';
-    Rtitle.innerHTML = 'Result';
     textInput.placeholder = "Add Text here...";
     textInput.name = 'textinput';
 
@@ -92,15 +90,6 @@ export const TextArea = () => {
     }
 
     button.addEventListener('click', () => { handleEvent()});
-    textInput.addEventListener('keydown', (e) => {
-        if (e.key === "Enter") {
-            e.preventDefault();
-            handleEvent();
-        }
-        
-    });
-
-
 
     resetbut.addEventListener('click', () => {
         textInput.value = ''; 

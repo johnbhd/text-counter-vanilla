@@ -3,13 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Time Text Analyzer</title>
+    
+    <title>Text Counter - Free Online Word & Character Counter Tool</title>
+
+    
+    <meta name="description" content="Need to count words, characters, or sentences instantly? Use our free online text counter tool for real-time text analysis. Try it now!">
+
+    <meta name="keywords" content="text counter, word counter, character counter, online text tool, real-time text counter, free text counter">
+    
+    <meta name="author" content="JBVILLEGAS">
+    
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph (for better social media previews) -->
+    <meta property="og:title" content="Real-Time Text Counter | Count Words, Characters & More">
+    <meta property="og:description" content="Instantly count words, characters, sentences, and more with our free online text counter.">
+    <meta property="og:image" content="https://txtcounter.vercel.app/logotext.png">
+    <meta property="og:url" content="https://txtcounter.vercel.app">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Real-Time Text Counter">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card for better social sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Real-Time Text Counter">
+    <meta name="twitter:description" content="Instantly count words, characters, sentences, and more with our free text counter tool.">
+    <meta name="twitter:image" content="https://txtcounter.vercel.app/logotext.png">
+    
     <link rel="shortcut icon" href="logotext.png" type="image/x-icon">
+
+    <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1204993304470449"
      crossorigin="anonymous"></script>
+
+    <!-- Canonical URL (Prevents duplicate SEO issues) -->
+    <link rel="canonical" href="https://txtcounter.vercel.app">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Real-Time Text Counter",
+            "url": "https://txtcounter.vercel.app",
+            "description": "Analyze text in real time! Count words, characters, sentences, paragraphs, numbers, and special characters instantly with our free text counter.",
+            "applicationCategory": "Utility",
+            "operatingSystem": "All",
+            "browserRequirements": "Requires JavaScript",
+            "author": {
+              "@type": "Person",
+              "name": "JB Villegas",
+              "url": "https://github.com/johnbhd"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          }
+          
+    </script>
+        
 </head>
 <body>
+    <div id="container">
+        <h1 id="title">Text Counter – Count Words, Characters & More</h1>
+        <textarea id="textInput" placeholder="Enter text here..."></textarea>
+    </div>
+
+    <div id="buttons">
+        <button id="countButton" aria-label="Count words, characters, and more">Count</button>
+        <button id="resetButton" aria-label="Reset the text input field">Reset</button>        
+    </div>
+
+    <div id="resultSection">
+        <h2 id="Rtitle">Results</h2>
+        <p id="paraCount">Paragraphs: 0</p>
+        <p id="sentCount">Sentences: 0</p>
+        <p id="wordCount">Words: 0</p>
+        <p id="charCount">Characters: 0</p>
+        <p id="numCount">Numbers: 0</p>
+        <p id="speCount">Special Characters: 0</p>
+    </div>
+
+    <!-- Add an "About" section for better SEO -->
+    <section id="about">
+        <h2>What is the Real-Time Text Counter?</h2>
+        <p>
+            The <strong>Text Counter</strong> is a free online tool that helps you analyze your text in real time. 
+            It instantly counts <strong>words, characters, sentences, paragraphs, numbers, and special characters</strong>. 
+            This tool is perfect for <strong>writers, students, bloggers, developers, and professionals</strong> who need quick and accurate text analysis.
+        </p>
     
+        <h3>📌 Why Use Our Text Counter?</h3>
+        <ul>
+            <li>✅ Instant word and character count.</li>
+            <li>✅ Works on any device (mobile-friendly).</li>
+            <li>✅ No sign-up required – 100% free.</li>
+            <li>✅ Useful for SEO, social media, and writing limits.</li>
+        </ul>
+    
+        <h3>❓ Frequently Asked Questions</h3>
+        <h4>How does the text counter work?</h4>
+        <p>Just type or paste your text, and the tool will instantly display the number of words, characters, and more.</p>
+    
+        <h4>Is this tool free?</h4>
+        <p>Yes! The text counter is 100% free and requires no registration.</p>
+    
+        <h4>Does this work on mobile devices?</h4>
+        <p>Yes! Our text counter is fully responsive and works on smartphones, tablets, and desktops.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 TxT Counter by JohnBHD | All Rights Reserved.</p>
+        <p id="footer"><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-use">Terms of Use</a></p>
+    </footer>
+    
+    
+    <!-- JavaScript -->
+    <script src="main.js" type="module" defer></script>
 </body>
-<script src="main.js" type="module"></script>
-</html> 
+</html>

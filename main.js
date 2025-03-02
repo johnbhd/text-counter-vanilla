@@ -3,9 +3,15 @@ import { Style } from "./style.js";
 
 const {title, textInput, Rtitle, paraCount, sentCount, wordCount, charCount, numCount, speCount, button, resetbut} = TextArea();
 
-const container = document.createElement('div');
-const resultDiv = document.createElement('div');
-const butDiv = document.createElement('div');
+const container = document.getElementById('container');
+const resultDiv = document.getElementById('resultSection');
+const butDiv = document.getElementById('buttons');
+const about = document.getElementById('about');
+const footer = document.getElementById('footer');
+
+footer.style.textAlign = 'center';
+
+about.style.padding = '40px 40px';
 
 container.appendChild(title);
 container.appendChild(textInput);
@@ -20,7 +26,4 @@ resultDiv.appendChild(charCount);
 resultDiv.appendChild(numCount);
 resultDiv.appendChild(speCount);
 
-document.body.append(container);
-document.body.append(butDiv);
-document.body.append(resultDiv);
 Style(title, textInput, Rtitle, container, resultDiv, paraCount, sentCount, wordCount, charCount, numCount, speCount, button, resetbut, butDiv);

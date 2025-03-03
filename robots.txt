@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://txtcounter.vercel.app/sitemap.xml

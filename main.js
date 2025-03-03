@@ -1,5 +1,4 @@
 import { TextArea } from "./TextArea.js";
-import { Style } from "./style.js";
 
 const {title, textInput, Rtitle, paraCount, sentCount, wordCount, charCount, numCount, speCount, button, resetbut} = TextArea();
 
@@ -25,5 +24,3 @@ resultDiv.appendChild(wordCount);
 resultDiv.appendChild(charCount);
 resultDiv.appendChild(numCount);
 resultDiv.appendChild(speCount);
-
-Style(title, textInput, Rtitle, container, resultDiv, paraCount, sentCount, wordCount, charCount, numCount, speCount, button, resetbut, butDiv);

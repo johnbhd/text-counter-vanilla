@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Calibri, sans-serif;
+    justify-content: center;
+    margin: 0;
+}
+
+#container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+#buttons {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    margin-top: 3vh;
+}
+
+#resultSection {
+    width: 80%;
+    margin-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#title, #Rtitle {
+    font-size: 50px;
+    text-align: center;
+}
+
+#paraCount, #sentCount, #wordCount, #charCount, #numCount, #speCount {
+    font-size: 30px;
+    text-align: left;
+}
+
+#textInput {
+    width: 100%;
+    height: 40vh;
+    font-size: 24px;
+    outline: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#countButton, #resetButton {
+    padding: 15px 30px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    border-radius: 50px;
+}
+
+#countButton {
+    background-color: lightblue;
+}
+
+#resetButton {
+    background-color: #e8a39e;
+}
+
+#countButton:hover {
+    opacity: 80%;
+}
